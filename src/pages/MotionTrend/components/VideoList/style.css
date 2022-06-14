@@ -1,0 +1,54 @@
+
+.video-list .video-list-header{
+    display: flex;
+    justify-content: space-between;
+}
+.video-list-header .tabs{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px ;
+    padding-bottom: 28px;
+
+    
+}
+.tabs .tab-item{
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    color: #070707;
+    cursor: pointer;
+}
+.tab-item.active{
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #070707;
+}
+.tab-item.active::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    left:0;
+    top: 100%;
+}
+.video-list-header .selection-criteria{
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    color: #070707;
+    cursor: pointer;
+}
+
+.video-list .tab-panel{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(360px, 1fr));
+    column-gap: 15px;
+    row-gap: 40px;
+}

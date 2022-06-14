@@ -1,0 +1,140 @@
+.card-item{
+    cursor: pointer;
+}
+.card-item .card-thumbnail{
+    position: relative;
+    height: 204px;
+}
+.card-item .card-thumbnail:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+}
+.card-thumbnail .card-image {
+    height:100%;
+}
+.card-thumbnail .card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-thumbnail .overlay{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+  
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+.overlay .label{
+    width: 30px;
+    height: 46px;
+    margin-left: 10px;
+}
+.overlay .label img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+} 
+.overlay .overlay-content{
+    width: 100%;
+display: flex;
+align-items: flex-end;    
+padding: 15px 13px;
+
+}
+.overlay-content .content{
+    width: 50%;
+    font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+
+}
+.overlay-content .time{
+    width: 50%;
+    font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: right;
+  color: #fff;
+    
+}
+.card-item .card-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:12px;
+}
+.card-detail .card-info{
+   display: flex;
+   align-items: center;
+   column-gap: 5px ;
+}
+.card-info .avatar{
+    width: 16px;
+    height: 16px;
+}
+.card-info .avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.card-info .name{
+    font-size: 12px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #070707;
+}
+.card-detail .card-react{
+    display: flex;
+    align-items: center;
+    column-gap: 15px ;
+}
+.card-react .react-item{
+    display: flex;
+    align-items: center;
+    column-gap: 2px ;
+}
+.react-item .react-icon{
+    width: 16px;
+    height: 16px ;
+}
+.react-item .react-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+.react-item .react-count{
+    font-size: 12px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333
+}
